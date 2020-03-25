@@ -4,19 +4,19 @@
     "builds": [
         {
             "src": "index.js",
-            "use": "@now/node"
+            "use": "@now/node-server"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "index.js"
+            "dest": "/index.js"
         }
     ],
     "env": {
-        "DB_USER" : "video-db-user",
-        "DB_PASSWORD" : "video-db-password",
-        "DB_HOST" : "video-db-host",
-        "DB_NAME" : "video-db-name"
+        "DB_USER" : "@video-db-user",
+        "DB_PASSWORD" : "@video-db-password",
+        "DB_HOST" : "@video-db-host",
+        "DB_NAME" : "@video-db-name"
     }
 }
